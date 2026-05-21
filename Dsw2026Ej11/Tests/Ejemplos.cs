@@ -38,24 +38,15 @@ internal class Ejemplos
         Console.WriteLine(lista.BuscarAlumno("Riquelme"));
         Console.WriteLine();
         */
+        Alumno? encontrado = lista.BuscarAlumno("Ana");
+        Alumno? inexistente = lista.BuscarAlumno("Riquelme");
 
         Console.WriteLine("Buscar alumno existente:");
-        Alumno? encontrado = lista.BuscarAlumno("Ana");
-
-        Console.WriteLine(
-            encontrado != null
-                ? encontrado
-                : "No existe");
-
+        Console.WriteLine(encontrado != null? encontrado : "No existe");
         Console.WriteLine();
 
         Console.WriteLine("Buscar alumno inexistente:");
-        Alumno? inexistente = lista.BuscarAlumno("Riquelme");
-
-        Console.WriteLine(
-            inexistente != null
-                ? inexistente
-                : "No existe");
+        Console.WriteLine(inexistente != null? inexistente : "No existe");
         Console.WriteLine();
 
         Console.WriteLine("Se borra un alumno con el objeto:");
@@ -69,7 +60,6 @@ internal class Ejemplos
         Console.WriteLine("Se elemina un alumno por posicion:");
         lista.EliminarPosicion(1);
         lista.ListarAlumnos();
-        Console.WriteLine();
     }
 
     //Agregar 3 alumnos al diccionario
@@ -200,7 +190,7 @@ internal class Ejemplos
 
         Console.WriteLine();
 
-        Console.WriteLine("Libros ordenados descendente:");
+        Console.WriteLine("Libros ordenados descendente (por nombre):");
 
         foreach (Libro libro in linq.GetListaDescendente())
         {

@@ -18,7 +18,7 @@ namespace Dsw2026Ej11.Collections;
  */
 public class CasoLinq{
 
-    private List<Libro> libros = new List<Libro>(Libro.CrearLista());
+    private readonly List<Libro> libros = new List<Libro>(Libro.CrearLista());
 
     //leer priemro
     public Libro? GetPrimero() => libros.FirstOrDefault();
@@ -30,7 +30,7 @@ public class CasoLinq{
     public decimal GetTotalPrecios() => libros.Sum(suma => suma.Precio);
 
     //promedio de precios
-    public decimal GetPromedioPrecios() => libros.Average(promedio => promedio.Precio);
+    public decimal GetPromedioPrecios() => Math.Round(libros.Average(promedio => promedio.Precio));
     
     //ID > 15
     public IEnumerable<Libro> GetListById() => libros.Where(id => id.Id >= 15);

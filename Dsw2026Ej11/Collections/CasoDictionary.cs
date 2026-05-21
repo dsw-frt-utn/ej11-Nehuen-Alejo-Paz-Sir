@@ -9,7 +9,7 @@ namespace Dsw2026Ej11.Collections;
 //Incluir un método para eliminar un alumno utilizando la clave
 public class CasoDictionary{
     //Dictionary <TKey, TValue> -- por qué no usar SortedDictionary?
-    private Dictionary<int, Alumno> diccionario = new();
+    private readonly Dictionary<int, Alumno> diccionario = new();
 
     //agregar
     public void AgregarAlumno(Alumno alumno) => diccionario[alumno.Id] = alumno;
