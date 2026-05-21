@@ -19,7 +19,7 @@ public class Libro
         {
             new Libro(1, "Clean Code", 45000),
             new Libro(2, "The Pragmatic Programmer", 52000),
-            new Libro(3, "Design Patterns", 61000),
+            new Libro(3, "Design Patterns", 61000), //los 4 grandes!?
             new Libro(4, "Refactoring", 57000),
             new Libro(5, "Domain Driven Design", 65000),
             new Libro(6, "Código Sostenible", 39000),
@@ -44,7 +44,7 @@ public class Libro
             new Libro(25, "DevOps en la Práctica", 54000),
             new Libro(26, "Seguridad Informática", 58000),
             new Libro(27, "Redes y Comunicaciones", 35000),
-            new Libro(28, "Machine Learning", 72000),
+            new Libro(28, "Machine Learning", 72000), //must
             new Libro(29, "Inteligencia Artificial", 78000),
             new Libro(30, "Cloud Computing", 62000)
         };
